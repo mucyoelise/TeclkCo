@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teclk - Join the Waitlist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="images/LogoNoBg.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "i3xaB-8NA0WkwkehB",
+            });
+        })();
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo"> <img src="./images/LogoNoBg.png" width="50%" alt=""></div>
+            <div class="nav-links">
+                <a href="#waitlistForm" class="btn-primary">Join Waitlist</a>
+            </div>
+        </div>
+        
+        <div class="hero">
+            <h1>
+                Building the future of <br>
+                <span class="gradient-text">software solutions</span>
+            </h1>
+            <p>
+                We're a team of creative problem-solvers tackling everyday challenges with custom software, 
+                beautiful design, and innovative products. Join our waitlist to be the first to know when we launch.
+            </p>
+            
+            <div class="features">
+                <div class="feature-tag">Custom Software</div>
+                <div class="feature-tag">UX/UI Design</div>
+                <div class="feature-tag">Mobile Apps</div>
+                <div class="feature-tag">Web Development</div>
+                <div class="feature-tag">Product Management</div>
+            </div>
+        </div>
+
+        <div class="waitlist-card">
+            <h2>Join the Waitlist</h2>
+            <p>Be among the first to experience our innovative solutions.</p>
+            
+            <form id="waitlistForm">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="John Doe" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="company">Company (Optional)</label>
+                    <input type="text" id="company" name="company" placeholder="Your company name">
+                </div>
+                
+                <button type="submit" id="submitBtn">
+                    Join Waitlist
+                </button>
+            </form>
+            
+            <div class="success-message" id="successMessage">
+                <h3>🎉 You're on the list!</h3>
+                <p>Thanks for joining! We'll be in touch soon with exciting updates.</p>
+            </div>
+        </div>
+
+        <footer>
+            &copy; 2026 Teclk. All rights reserved.
+        </footer>
+    </div>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
